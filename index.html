@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ 
+    
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    
+</head>
+
+<style>
+
+    body{margin: 00px;
+         border: 00px;
+         font-family: sans-serif;
+         font-weight: bolder}
+
+    .logo{width: 150px;
+    height: 65px;}    
+
+    .nvlg{display: flex;}
+
+    .nav1{background-color: rgb(255, 255, 255);
+        display: flex;
+        justify-content: center;
+        gap: 230px;  
+        height: 65px;
+        border-bottom: 1px solid rgba(104, 104, 104, 0.253);}
+
+    .navhf{font-size: 12px;
+           font-weight: bold;
+           font-family:sans-serif;
+          list-style: none;
+          display: flex;
+          text-align: center;
+          align-items: center;
+          gap: 60px;}
+
+    #txtdn{font-weight: 300;
+           font-size: 10px;
+           color: rgb(48, 47, 47);}    
+           
+    .nav2{grid-template-columns: repeat(11, 120px);
+        display: grid;
+    height: 54px;
+    justify-content: center;
+    font-size: 14px;
+           font-weight: 200;
+           font-family:sans-serif;}
+
+    .grid1{display: flex;
+        align-items: center;
+          justify-content: center;}
+
+               
+
+    .flag{width: 30px;
+        height: 25px;
+        margin-right: 10px;}  
+        
+    .navhf i{margin-right: 10px;}    
+
+    #sign{width: 150px;
+           height: 30px;
+           border: 0px;
+           border-radius: 20px;
+           margin-top: 3px;
+         background-color:#2196F3;
+        font-weight: bold;
+    color: white;}   
+
+    .blue{height: 256.83px;
+        background: linear-gradient(to right, #3366cc 62%, #66ffff 100%);
+        display: flex;
+        justify-content: center;
+    }
+
+    .sec1{display: grid;
+          width: 70%;
+          height: 100%;
+          grid-template-rows: 1fr 2fr 1fr;}
+    
+    .blue1{list-style: none;
+        display: flex;
+    justify-content: space-between;
+    align-items: center;}
+
+    .ln1{display: flex;
+     width: 300px;
+    justify-content: space-between;}
+
+    .ln1 li{border: 1px solid white;
+            border-radius:150px;
+            padding: 3px;
+            background-color:#ffffff;
+            font-size: small;
+            color: #21458b;
+            height: 15px;
+            width: 90px;
+            text-align: center;}
+
+    .ln2{font-size: larger;
+         color: white;}        
+
+    .blue2{display: grid;
+           grid-template-columns: 320px 320px 180px 180px 180px 180px ;
+           border-radius: 10px;
+        justify-content: center;
+    align-items: center;
+background-color: white;
+height: 110px;
+box-shadow: 5px 5px 20px black;}
+
+    .search{color: white;
+        font-size: larger;
+        background-color: #ef6614;
+       height: 100%;
+     text-align: center;
+      align-content: center;
+      border-top-right-radius: 10px;
+     border-bottom-right-radius: 10px;}    
+
+     #grtxt{font-size:12px;
+    color: rgb(63, 63, 63);}
+
+    #bigtxt{font-size: 25px;}     
+    
+    #smltxt{font-size: 12px;
+            font-weight: lighter;}
+
+    #oth1{font-size: 12px;
+        color: rgb(63, 63, 63);
+        font-weight: 100; }    
+        
+    #oth2{font-size: 12px;}    
+
+    .fa-calendar-days{color: gray;}
+
+
+
+    .blue3{font-weight: 300;
+        display: flex;
+    justify-content: space-between;
+    align-items: center;
+   color: white;}     
+
+   #rd{border: 2px solid white;}
+
+   .chkbtn{width: 125px;
+height: 45px;
+border: 1px solid #aae3ec;
+font-weight: 300;
+color:#ffffff;
+background-color: rgba(255, 255, 255, .15)}
+
+.page2{display: grid;
+    grid-template-rows: 120px 60px 300px 50px;}
+
+ 
+
+.grd1{height: 120px;
+display: flex;
+align-items: center;
+justify-content: center;}
+
+.flagicon{width: 37px;}
+.offr{font-weight: 800;
+font-size: xx-large;
+font-family: sans-serif;
+display: flex;}
+
+
+.grd2{height: 60px;
+display: flex;
+justify-content: center;}
+
+.option1{width: 60%;
+height: 100%;
+list-style: none;
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+}
+
+
+
+.grd3{display: grid;
+justify-content: center;
+align-content: center;
+grid-template-columns: 500px 500px 500px;
+height: 100%;
+gap: 15px;}
+
+.bx{display: flex;
+    background-color: rgba(128, 128, 128, 0.123);
+height:250px;
+width: 500px;
+justify-content: center;
+border-radius: 15px;}
+
+.bx1{
+    width: 90%;
+height: 70%;
+background: linear-gradient(to right, #3366cc 62%, #66ffff 100%);
+margin: 10px;
+}
+
+.bx2{
+    width: 90%;
+height: 70%;
+background: linear-gradient(to right, #42753e 48%, #5fd8d4 100%);;
+margin: 10px;}
+
+.bx3{
+    width: 90%;
+height: 70%;
+background: linear-gradient(to right, #3366cc 62%, #66ffff 100%);
+margin: 10px;}
+
+.bb{border-radius: 15px;
+display: flex;
+justify-content: space-between;
+}
+
+.bbtxt{margin: 10px;}
+
+.bxbigtxt{font-size: xx-large;
+color: white;}
+
+.bxtxt{font-size: medium;
+color: white;
+font-weight: 400;}
+
+.bx1btn{list-style: none;
+    color: white;
+border: 1px white dashed;
+width: 110px;
+height: 35px;
+padding: 3px;
+background-color: #0961e7;
+margin-top: 20px;
+border-radius: 5px;}
+
+.btntxt1{font-size: smaller;}
+
+.btntxt2{font-size: small;}
+
+.bximg{height: 150px;
+width: 120px;
+border-top-left-radius: 100px;
+border-top-right-radius: 100px;
+box-shadow: 0px 0px 10px;
+margin-top: 24px;
+margin-right: 15px;
+}
+
+
+
+.grd4{display: flex;
+justify-content: center;
+align-content: center;}  
+
+
+.grd4 .bt1{width: 160px;
+height: 33px;
+font-family: sans-serif;
+color: white;
+background-color: #3366cc;
+border-radius: 50px;
+border: 0px;
+font-size: small;}
+
+
+
+.lastpage{display: grid;
+grid-template-rows:200px 100px 450px 200px;}
+
+.clmn1{display: grid;
+grid-template-columns: 800px 300px;
+justify-content: center;
+align-items: center;
+gap: 20px;}
+
+.clmn1 div{border: 1px solid blacks;
+height:65%;
+border-radius: 17px;}
+
+.clmn1-1{background: linear-gradient(to right, #76c6f5, #62aceb, #31d2c2, #12c29f);;
+display: grid;
+grid-template-columns: 150px 500px 150px;
+align-items: center;}
+
+.clmn1-1 .div1{display: flex;
+justify-content: center;
+align-items: center;}
+
+.clmnimg1{height:70px;
+width: 73px;}
+
+.div2{align-items: center;
+color: white;}
+
+.div2 li{list-style: circle;
+    font-size: smaller;
+color: white;}
+
+.div2 .txt1{font-size: x-large;}
+.div2 .txt2{font-size: medium;
+font-weight: 200;}
+
+.clmn1-2 img{width: 288px;
+height: 129px;
+border-radius: 10px;}
+
+.glmain{display: flex;
+justify-content: center;}
+
+.gallery{width: 1500px;
+height: 450px;
+display: grid;
+grid-template-rows: 150px 150px 150px;
+}
+.gl{display: grid;
+grid-template-columns: 500px 500px 500px;
+align-content: center;
+text-align: center;
+height: 100%;}
+
+.gl img{display: inline;
+border-radius: 10px;}
+
+.gl .txt{position: absolute;
+margin: 10px;
+font-size: larger;
+font-weight: bold;
+color:black;}
+
+.bluetxt{color: #2196f3;
+    margin: 10px;}
+
+.lstmain{display: flex;
+justify-content: center;
+align-items: center;}
+
+.lstgrd{height: 80%;
+width: 1500px;
+display: grid;
+grid-template-columns: 500px 500px;
+justify-content: center;
+gap: 150px;}
+
+.lstgrd div{height: 100px;
+width: 500px;
+border: 1px solid rgba(0, 0, 0, 0.288);
+box-shadow: 0px 0px 10px;
+border-top-left-radius: 50px;}
+
+.lstgrd img{width: 35px;
+height: 38px;
+display: inline;
+margin-top: 20px;
+margin-left: 10px;
+border-spacing: 20px;}
+
+.hd1{margin: 20px;
+position: absolute;}
+
+.lstgrd .text{font-size: smaller;
+font-weight: 100;
+margin: 20px;}
+
+.lstgrd .text2{margin-left:70px;}
+
+.lstgrd .a1{color: #0961e7;
+font-size: smaller;
+font-weight: 100;
+margin-left: 65px;}
+
+.lstgrd .a2{color: #0961e7;
+font-size: smaller;
+font-weight: 100;}
+
+.jumper{position: fixed;
+    top: 800px;
+    left: 1800px;
+    animation: jumper;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+}
+@keyframes jumper{
+    70% {
+    transform: translateY(0%);
+}
+80% {
+    transform: translateY(-15%);
+}
+
+90% {
+    transform: translateY(0%);
+}
+95% {
+    transform: translateY(-7%);
+}
+97% {
+    transform: translateY(0%);
+}
+99% {
+    transform: translateY(-3%);
+}
+100% {
+    transform: translateY(0);
+}
+}
+
+
+
+
+
+
+          
+    
+
+</style>
+
+<body>
+
+    <div><img class="jumper" src="https://images.emtcontent.com/chataibot/ChatBotRo.svg?N"></div>
+
+    <div class="nav1">
+        <div class="nvlg"><img class="logo" src="https://images.emtcontent.com/brandlogo/emtlogo_new8.svg" alt="logohere"></div>
+    
+
+    <div class="navhf">
+        
+        <li><i class="fa-regular fa-user"></i>EMTMate<span id="txtdn"><br>Agent travel solution</span></li>
+        <li><i class="fa-solid fa-suitcase"></i>EMTDesk<span id="txtdn"><br>Corparate travel program</span></li>
+        <li><i class="fa-regular fa-gem"></i>EMTRoyal<span id="txtdn"><br>For Prime Member</span></li>
+        <li><i class="fa-solid fa-earth-americas"></i>Xplore Bharat<span id="txtdn"><br>A Tour to India</span></li>
+        <li><i class="fa-solid fa-crown"></i>Joint EMTPro<span id="txtdn"><br>Enjoy More Benifits</span></li>
+        <li><i class="fa-solid fa-headset"></i><i class="fa-solid fa-chevron-down"></i><img class="flag" src="flag.png" alt=""><i class="fa-solid fa-chevron-down"></i><br><button id="sign">Login or Signup</button></li>
+    </div>
+    
+    </div>
+
+    <div class="nav2">
+
+        <div class="grid1"><i class="fa-solid fa-plane-departure"></i> Flights</div>
+        <div class="grid1"><i class="fa-solid fa-hotel"></i> Hotels</div>
+        <div class="grid1"><i class="fa-solid fa-hotel fa-2xs"> </i><i class="fa-solid fa-plane-departure fa-2xs"></i>Flight  +  Hotels</div>
+        <div class="grid1"><i class="fa-solid fa-train"></i> Trains</div>
+        <div class="grid1"><i class="fa-solid fa-bus"></i> Bus</div>
+        <div class="grid1"><i class="fa-solid fa-umbrella-beach"></i> Holidays</div>
+        <div class="grid1"><i class="fa-solid fa-car-rear"></i> Cabs</div>
+        <div class="grid1"><i class="fa-solid fa-person-skiing"></i> Activities</div>
+        <div class="grid1"><i class="fa-brands fa-cc-visa"></i> Visa</div>
+        <div class="grid1"><i class="fa-regular fa-circle"></i> More</div>
+        <div class="grid1"></div>
+
+
+
+    </div>
+
+
+    <div class="blue">
+    <div  class="sec1">
+          <div class="blue1">
+            <div class="ln1">
+                <li>One Way</li>
+                <li>Round Trip</li>
+                <li>Multicity</li>
+            </div>
+            <div class="ln2">
+                <li>Search Lowest Price</li>
+            </div>
+
+        </div>
+
+           <div class="blue2">
+            
+            <div class="delhi"><span id="grtxt">FROM<br></span><span id="bigtxt">Delhi</span><br><span id="smltxt">[DEL] Indira Gandhi International Airport</span></div>
+            <div class="mumbai"><span id="grtxt">TO<br></span><span id="bigtxt">Mumbai</span><br><span id="smltxt">[BOM] Chhatrapati Shivaji International Airport</span></div>
+            <div class="date"><span id="grtxt">DEPRATURE DATE<br></span><span id="bigtxt">11</span><span id="oth2">Jan,2025</span> <span><i class="fa-solid fa-calendar-days"></i></span><br><span id="smltxt">Sarurday</span></div>
+            <div class="return"><span id="grtxt">RETURN DATE<br></span><span id="oth1">Book a round trip </span><i class="fa-solid fa-calendar-days"></i><br><span id="oth1">to save more</span></div>
+            <div class="traveller"><span id="grtxt">TRAVELLER AND CLASS<br></span><span id="bigtxt">1</span><span id="oth2">Travaller(s)</span><i class="fa-solid fa-chevron-down"></i><br><span id="smltxt">Economy</span></div>
+            <div class="search">SEARCH</div>
+
+           </div>
+
+           <div class="blue3">
+            <div>
+                <input class="rd" type="radio" name="rd" value="1">Defence Forcces
+                <input class="rd" type="radio" name="rd" value="2">Students
+                <input class="rd" type="radio" name="rd" value="3">Senior Citizens
+                <input class="rd" type="radio" name="rd" value="4">Doctors Nurses
+            </div>
+
+            <div>
+                <button class="chkbtn"><i class="fa-solid fa-ticket"></i>  Web Check-in</button>
+            </div>
+           </div>
+
+    </div>
+     </div>
+
+     <div class="page2">
+        <div class="gg grd1"><img class="flagicon" src="https://images.emtcontent.com/offer-img/triwings-left.svg" alt=""><span class="offr">Exclusive Offers</span><img class="flagicon" src="https://images.emtcontent.com/offer-img/triwings.svg" alt=""></div>
+
+        <div class="gg grd2">
+            <div class="option1">
+            <li>Best Offers</li>
+            <li>Bank Offers</li>
+            <li>Flight</li>
+            <li>Hotel</li>
+            <li>Bus</li>
+            <li>Holidays</li>
+            <li>Cabs</li>
+            <li>Duty Free</li>
+            <li>EMT Cards</li>
+            </div>
+        </div>
+
+        <div class="gg grd3">
+            <div class="bx">
+                <div class="bb bx1">
+
+                    <div class="bbtxt">
+                        <span class="bxtxt">New User<br>Offer on</span><br>
+                    <span class="bxbigtxt">First Flight</span><br>
+                    <li class="bx1btn"><span class="btntxt1">use code:<br></span><span class="btntxt2">EMTFIRST <i class="fa-regular fa-file-lines"></i></li></span>
+                    </div>
+
+                    <div><img class="bximg" src="https://images.emtcontent.com/offer-img/emtfirst-3jan24-hp.webp"></div>
+                </div>
+                
+
+                
+            
+            </div>
+
+            <div class="bx">
+                <div class="bb bx2">
+
+                    <div class="bbtxt"><span class="bxtxt">Feel the devotion of<br></span><span class="bxbigtxt">Kumbh Mela<br>2025</span></div>
+                    <div><img class="bximg" src="https://images.emtcontent.com/offer-img/kumbh-hp.webp"></div>
+
+                </div>
+            </div>
+
+            <div class="bx">
+                <div class="bb bx3">
+                    <div class="bbtxt"><span class="bxtxt">Gateaway sale by<br></span><span class="bxbigtxt">IndiGO AirLines</span></div>
+                    <div><img class="bximg" src="https://images.emtcontent.com/offer-img/desk-offer/indigo.webp"></div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="gg grd4"><button class="bt1">View all offers</button></div>
+     </div>
+
+     <div class="lastpage">
+
+    <div class="clmn1">
+        <div class="clmn1-1">
+            <div class="div1"><img class="clmnimg1" src="https://images.emtcontent.com/desk-img/full-ref-lft.png" alt=""></div>
+            <div class="div2"><span class="txt1" >Full Refund*</span>      <span class="txt2">Due to medical reasons</span><br><br>
+                <li>Presenting you an extraordinary offer in these unfavorable circumstances..</li>
+                <li>  Get a full refund on a domestic ticket in case you cancel it due to medical sickness..</li>
+                <li>The Best Part - There are ZERO extra charges for this service.</li>
+            </div>
+
+
+            <div class="div3"><img class="clmnimg1" src="https://images.emtcontent.com/desk-img/full-ref-rgt.png" alt=""></div></div>
+
+        <div class="clmn1-2"><img src="https://images.emtcontent.com/offer-img/emtcards-banner-mob2.webp" alt=""></div>
+    </div>
+
+    <div>        <div class="gg grd1"><img class="flagicon" src="https://images.emtcontent.com/offer-img/triwings-left.svg" alt=""><span class="offr">Top Flight Routes</span><img class="flagicon" src="https://images.emtcontent.com/offer-img/triwings.svg" alt=""></div>
+</div>
+
+<!-- --------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+    <div class="glmain">
+    <div class="gallery">
+
+        <div class="gl">
+            <div><img src="https://images.emtcontent.com/desk-img/mumbai-img.png"><span class="txt">Chennai<i class="fa-solid fa-plane fa-xs"></i>Mumbai<br></span><span class="bluetxt">MAA-BOM</span></div>
+            <div><img src=https://images.emtcontent.com/desk-img/bangalore-img.png><span class="txt">Delhi<i class="fa-solid fa-plane fa-xs"></i>Ahmedabad<br></span><span class="bluetxt">DEL-AMD</span></div>
+            <div><img src=https://images.emtcontent.com/desk-img/lucknow-img.png><span class="txt">Delhi<i class="fa-solid fa-plane fa-xs"></i>Lucknow<br></span><span class="bluetxt">DEL-LKO</span></div>
+        </div>
+
+        <div class="gl">
+            <div><img src="https://images.emtcontent.com/desk-img/chennai-img.png"><span class="txt">Mumbai<i class="fa-solid fa-plane fa-xs"></i>Chennai<br></span><span class="bluetxt">BOM-MAA</span></div>
+            <div><img src="https://images.emtcontent.com/desk-img/dubai-img.png"><span class="txt">Mumbai<i class="fa-solid fa-plane fa-xs"></i>Dubai<br></span><span class="bluetxt">BOM-DXB</span></div>
+            <div><img src="https://images.emtcontent.com/desk-img/kolkata-img.png"><span class="txt">Mumbai<i class="fa-solid fa-plane fa-xs"></i>Kolkata<br></span><span class="bluetxt">BOM-CCU</span></div>
+        </div>
+
+        <div class="gl"> 
+            <div><img src="https://images.emtcontent.com/desk-img/bangalore-img.png"><span class="txt">Hyderabad<i class="fa-solid fa-plane fa-xs"></i>Banglore<br></span><span class="bluetxt">HYD-BLR</span></div>
+            <div><img src="https://images.emtcontent.com/desk-img/jaipur-img.png"><span class="txt">Mumbai<i class="fa-solid fa-plane fa-xs"></i>Jaipur<br></span><span class="bluetxt">BOM-JAI</span></div>
+            <div><img src="https://images.emtcontent.com/desk-img/dubai-img.png"><span class="txt">Delhi<i class="fa-solid fa-plane fa-xs"></i>Dubai<br></span><span class="bluetxt">DEL-DXB</span></div>
+        </div>
+
+    </div>
+    </div>
+
+    <!-- --------------------------------------------------------------------------------------------------------- -->
+
+    <div class="lstmain">
+        <div class="lstgrd">
+
+            <div><img src="https://images.emtcontent.com/desk-img/important.svg"><span class="hd1">Important Info:<br></span><span class="text">To cancel/claim refund or reschedule/modify your booking<br></span><a class="a1">Click here...</a></div>
+
+            <div><img src="https://images.emtcontent.com/desk-img/airline-notification.svg"><span class="hd1">Airline Notifications<br></span><span class="text">Get instant flight updates, notifications and travel alerts from airlines<br><span class="text2">to remain informed</span></span><a class="a2">Click here...</a></div>
+
+        </div>
+    </div>
+
+     </div>
+
+     
+
+
+</body>
+</html>
